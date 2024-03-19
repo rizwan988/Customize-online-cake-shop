@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css"> <!-- Link to an external stylesheet for better organization -->
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Inter', sans-serif;
+      background: #07212e;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+    }
+
+    .container {
+      display: flex;
+      width: 800px; /* Adjust the width as needed */
+      height: 500px; /* Adjust the height as needed */
+      background: #07212e;
+      border-radius: 10px;
+      overflow: hidden;
+      border: 2px solid white; 
+    }
+
+    .left-side {
+      width: 50%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 20px;
+      box-sizing: border-box;
+    }
+
+    .right-side {
+      width: 50%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      background: white;
+      justify-content: space-around;
+      padding: 20px;
+      box-sizing: border-box;
+    }
+
+    img {
+      width: 100%;
+      height: auto;
+      max-height: 100%;
+      border-radius: 10px;
+    }
+
+    .logo-text {
+      color: white;
+      font-size: 20px;
+      font-weight: 600;
+      margin-top: 10px;
+    }
+
+    .box {
+      width: 301px;
+      height: 87px;
+      background: white;
+      border-radius: 10px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      font-size: 20px;
+      font-weight: 600;
+      text-decoration: none; /* Remove underline */
+    }
+
+    .customer {
+      background: #07212e;
+      margin-bottom: -40px; /* Reduce the gap */
+    }
+
+    .seller {
+      background: #07212e;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="left-side">
+      <img src="images/logocake.png" alt="Logo">
+      <p class="logo-text">CAKE HEAVEN</p>
+    </div>
+    <div class="right-side">
+      <a href="signup.php" class="box customer">
+        <span>CUSTOMER</span>
+      </a>
+      <a href="signup1.php" class="box seller">
+        <span>SELLER</span>
+      </a>
+    </div>
+  </div>
+</body>
+</html>
